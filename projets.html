@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets - Boukari</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/projets.css">
+</head>
+<body>
+<canvas id="particle-canvas"></canvas>
+<div id="cursor-ring"></div>
+
+<div class="projets-page">
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-mark"></span>
+      <span class="logo-text">Boukari</span>
+    </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html" class="active">Projets</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- ===== TITRE DE PAGE (compact) ===== -->
+  <section class="page-hero">
+    <span class="eyebrow">Projets</span>
+    <h1>Ce que j'ai construit</h1>
+  </section>
+
+  <!-- ===== CORPS : vedette + galerie BTS côte à côte ===== -->
+  <main class="projets-main">
+
+    <!-- ---- Colonne gauche : projet en vedette WIFI TOGO ---- -->
+    <section class="projet-vedette">
+
+      <div class="projet-vedette__media">
+
+        <div class="projet-phone" id="projetPhone">
+
+          <div class="phone-slot phone-slot--video active" id="slotVideo">
+            <video class="projet-video" id="projetVideo" controls poster="images/W1.png" playsinline>
+              <source src="images/wifiVI.mp4" type="video/mp4">
+              Ta vidéo de démo apparaîtra ici.
+            </video>
+            <button class="phone-fullscreen" id="videoFullscreen" aria-label="Voir la vidéo en plein écran" type="button">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+
+          <div class="phone-slot phone-slot--image" id="slotImage">
+            <div class="phone-slot__bg" id="phoneImageBg"></div>
+            <img id="phoneImage" class="phone-slot__img" src="" alt="">
+            <button class="phone-expand" id="phoneExpand" aria-label="Agrandir l'image" type="button">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </button>
+            <button class="phone-back" id="phoneBack" aria-label="Revenir à la vidéo" type="button">
+              <i class="fa-solid fa-play"></i> Voir la vidéo
+            </button>
+          </div>
+
+        </div>
+
+        <div class="projet-vedette__miniatures" id="wifiThumbs">
+          <img src="images/W1.png" alt="WiFi Togo — capture 1" data-active="false">
+          <img src="images/W2.png" alt="WiFi Togo — capture 2" data-active="false">
+          <img src="images/W3.png" alt="WiFi Togo — capture 3" data-active="false">
+          <img src="images/W4.png" alt="WiFi Togo — capture 4" data-active="false">
+          <img src="images/W5.png" alt="WiFi Togo — capture 5" data-active="false">
+          <img src="images/W6.png" alt="WiFi Togo — capture 6" data-active="false">
+          <img src="images/W7.png" alt="WiFi Togo — capture 7" data-active="false">
+          <img src="images/W8.png" alt="WiFi Togo — capture 7" data-active="false">
+          <img src="images/W9.png" alt="WiFi Togo — capture 7" data-active="false">
+          <img src="images/W10.png" alt="WiFi Togo — capture 7" data-active="false">
+          <img src="images/W11.png" alt="WiFi Togo — capture 7" data-active="false">
+          <img src="images/W12.png" alt="WiFi Togo — capture 7" data-active="false">
+          <img src="images/W13.png" alt="WiFi Togo — capture 7" data-active="false">
+
+        </div>
+      </div>
+
+      <div class="projet-vedette__texte">
+        <span class="projet-tag projet-tag--vedette"><i class="fa-solid fa-star"></i> Projet en vedette</span>
+        <h2>WiFi Togo</h2>
+        <p class="projet-periode">2025 – 2026</p>
+
+        <p class="projet-desc">
+          Plateforme mobile de vente et de gestion de forfaits Wi-Fi pour les
+          vendeurs togolais équipés de routeurs MikroTik — API, base de
+          données et interface conçues de bout en bout.
+        </p>
+
+        <ul class="projet-points">
+          <li>Application mobile de vente et de gestion de forfaits</li>
+          <li>API REST + MySQL, avec gestion des utilisateurs</li>
+          <li>Tableau de bord des hotspots, forfaits et transactions</li>
+        </ul>
+
+        <div class="projet-stack">
+          <span>React Native</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MySQL</span>
+          <span>API REST</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ---- Colonne droite : projets BTS, une seule grande carte qui défile ---- -->
+    <section class="projets-bts">
+
+      <div class="projets-bts__entete">
+        <span class="eyebrow">Projets BTS</span>
+        <h2>Applications de gestion Desktop &amp; Web</h2>
+        <div class="projet-stack">
+          <span>Java</span>
+          <span>Electron</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>SQLite</span>
+        </div>
+      </div>
+
+      <div class="bts-showcase" id="btsShowcase">
+        <button class="bts-arrow bts-arrow--prev" id="btsPrev" aria-label="Projet précédent" type="button">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="bts-arrow bts-arrow--next" id="btsNext" aria-label="Projet suivant" type="button">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="bts-showcase__track" id="btsTrack">
+
+            <article class="bts-slide" data-images="images/bu1.png,images/bu2.png,images/bu3.png,images/bu4.png,
+                  images/bu5.png,images/bu6.png,images/bu7.png,images/bu8.png">
+            <div class="bts-slide__media">
+              <div class="bts-slide__bg"></div>
+              <img class="bts-slide__img" src="images/bu1.png" alt="Gestion de budget">
+            </div>
+            <button class="bts-slide__expand" type="button" aria-label="Voir Gestion de budget en grand">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </button>
+            <div class="bts-slide__thumbs">
+              <img src="images/bu1.png" alt="Gestion de budget — capture 1" data-active="true">
+              <img src="images/bu2.png" alt="Gestion de budget — capture 2" data-active="false">
+              <img src="images/bu3.png" alt="Gestion de budget — capture 3" data-active="false">
+              <img src="images/bu4.png" alt="Gestion de budget — capture 4" data-active="false">
+              <img src="images/bu5.png" alt="Gestion de budget — capture 5" data-active="false">
+              <img src="images/bu6.png" alt="Gestion de budget — capture 6" data-active="false">
+              <img src="images/bu7.png" alt="Gestion de budget — capture 7" data-active="false">
+              <img src="images/bu8.png" alt="Gestion de budget — capture 8" data-active="false">
+
+            </div>
+            <div class="bts-slide__info">
+              <h3>Gestion scolaire</h3>
+              <p>Gestion des élèves, des classes, des matières et des notes, avec calcul automatique des moyennes et génération des bulletins scolaires selon les résultats de chaque classe.</p>
+            </div>
+
+          </article>
+
+
+          <article class="bts-slide" data-images="images/gar1.png,images/gar2.png">
+            <div class="bts-slide__media">
+              <div class="bts-slide__bg"></div>
+              <img class="bts-slide__img" src="images/gar1.png" alt="Gestion de garage">
+            </div>
+            <button class="bts-slide__expand" type="button" aria-label="Voir Gestion de garage en grand">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </button>
+            <div class="bts-slide__thumbs">
+              <img src="images/gar2.png" alt="Gestion de garage — capture 1" data-active="true">
+            </div>
+            <div class="bts-slide__info">
+              <h3>Gestion de garage</h3>
+              <p>Suivi des véhicules, des interventions et des factures d'un garage automobile, avec un tableau de bord pensé pour l'atelier au quotidien.</p>
+            </div>
+          </article>
+
+          <article class="bts-slide" data-images="images/eg0.png,images/eg1.png,images/eg2.png,images/eg3.png,images/eg4.png">
+            <div class="bts-slide__media">
+              <div class="bts-slide__bg"></div>
+              <img class="bts-slide__img" src="images/eg0.png" alt="Gestion d'église">
+            </div>
+            <button class="bts-slide__expand" type="button" aria-label="Voir Gestion d'église en grand">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </button>
+            <div class="bts-slide__thumbs">
+              <img src="images/eg0.png" alt="Gestion d'église — capture 1" data-active="true">
+              <img src="images/eg1.png" alt="Gestion d'église — capture 2" data-active="false">
+              <img src="images/eg2.png" alt="Gestion d'église — capture 3" data-active="false">
+              <img src="images/eg3.png" alt="Gestion d'église — capture 4" data-active="false">
+              <img src="images/eg4.png" alt="Gestion d'église — capture 5" data-active="false">
+
+            </div>
+            <div class="bts-slide__info">
+              <h3>Gestion d'église</h3>
+              <p>Suivi des membres, des cultes et des contributions d'une communauté, avec une saisie simple pour un usage non technique.</p>
+            </div>
+          </article>
+
+  
+          <article class="bts-slide" data-images="images/dash.png">
+            <div class="bts-slide__media">
+              <div class="bts-slide__bg"></div>
+              <img class="bts-slide__img" src="images/dash.png" alt="Gestion de produits">
+            </div>
+            <button class="bts-slide__expand" type="button" aria-label="Voir Gestion de produits en grand">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </button>
+            <div class="bts-slide__info">
+              <h3>Gestion de produits</h3>
+              <p>Suivi de stock, entrées et sorties, avec un tableau de bord pour piloter un inventaire au jour le jour.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="bts-dots" id="btsDots">
+        <button class="bts-dot active" type="button" aria-label="Voir Gestion de garage"></button>
+        <button class="bts-dot" type="button" aria-label="Voir Gestion d'église"></button>
+        <button class="bts-dot" type="button" aria-label="Voir Gestion de budget"></button>
+        <button class="bts-dot" type="button" aria-label="Voir Gestion de produits"></button>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<!-- ===== VUE EN GRAND (déclenchée par la loupe sur une carte, ou sur le téléphone) ===== -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-stage__bg" id="lbBg"></div>
+
+  <button class="lightbox-close" id="lbClose" aria-label="Fermer" type="button"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox-rotate" id="lbRotate" aria-label="Faire pivoter l'image" type="button"><i class="fa-solid fa-rotate"></i></button>
+
+  <button class="lightbox-nav lightbox-nav--prev" id="lbPrev" aria-label="Image précédente" type="button">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <figure class="lightbox-stage" id="lbStage">
+    <div class="lightbox-stage__frame" id="lbFrame">
+      <img id="lightboxImg" src="" alt="">
+    </div>
+    <figcaption>
+      <span id="lbCaption"></span>
+      <span class="lightbox-counter" id="lbCounter"></span>
+    </figcaption>
+  </figure>
+
+  <button class="lightbox-nav lightbox-nav--next" id="lbNext" aria-label="Image suivante" type="button">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</div>
+
+<script src="js/projets.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos - Boukari</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body class="scrollable">
+<canvas id="particle-canvas"></canvas>
+<div id="cursor-ring"></div>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-mark"></span>
+      <span class="logo-text">Boukari</span>
+    </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html" class="active">À propos</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- ===== HERO DE PAGE ===== -->
+  <section class="page-hero">
+    <div class="page-hero__conteneur">
+      <span class="eyebrow">À propos</span>
+      <h1>Qui je suis</h1>
+    </div>
+  </section>
+
+  <!-- ===== PROFIL (photo + texte) ===== -->
+  <section class="profil">
+    <div class="profil__conteneur">
+      <div class="profil-photo">
+        <img src="images/profile.png" alt="Photo de Boukari">
+      </div>
+
+      <div class="profil-texte">
+        <p>
+          Je m'appelle Chabane BOUKARI. Étudiant en BTS Informatique, je conçois des
+          applications web, mobiles et desktop de bout en bout — architecture, base de
+          données, API et interface. J'aime comprendre un problème avant de me lancer
+          dans le code, parce qu'une bonne solution commence toujours par une bonne question.
+        </p>
+        <p>
+          Je travaille aussi bien sur le front-end que le back-end, et je m'intéresse
+          de plus en plus au développement mobile et desktop pour élargir les
+          possibilités de ce que je peux construire.
+        </p>
+        <p>
+          En dehors du code, je reste curieux : chaque projet, chaque bug résolu
+          est une occasion d'apprendre quelque chose de nouveau.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BANDEAU INFOS ===== -->
+  <section class="infos-bar">
+    <div class="infos-bar__item">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <span class="infos-bar__label">Localisation</span>
+        <span class="infos-bar__valeur">Togo</span>
+      </div>
+    </div>
+    <div class="infos-bar__item">
+      <i class="fa-solid fa-language"></i>
+      <div>
+        <span class="infos-bar__label">Langues</span>
+        <span class="infos-bar__valeur">Français, Anglais</span>
+      </div>
+    </div>
+    <div class="infos-bar__item">
+      <i class="fa-solid fa-circle-check"></i>
+      <div>
+        <span class="infos-bar__label">Disponibilité</span>
+        <span class="infos-bar__valeur">Ouvert aux stages & emploi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARCOURS + VALEURS ===== -->
+  <section class="parcours-valeurs">
+
+    <div class="parcours">
+      <span class="eyebrow">Mon parcours</span>
+      <h2>Mon histoire</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-body">
+            <span class="timeline-year">2024 – 2026</span>
+            <h3>BTS en Informatique</h3>
+            <p>Spécialité Développement d'Applications et Gestion des Systèmes Informatiques.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-body">
+            <span class="timeline-year">2025 – 2026</span>
+            <h3>Applications de gestion desktop &amp; web</h3>
+            <p>Plusieurs applications de gestion (garage, église, budget, produits) développées comme projets de BTS.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-body">
+            <span class="timeline-year timeline-year--now">2026 – Aujourd'hui</span>
+            <h3>WiFi Togo &amp; Gestion Scolaire Intelligent</h3>
+            <p>Une plateforme de vente de connexions Wi-Fi et un logiciel de gestion scolaire, chacun décliné en desktop, API et mobile.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="valeurs">
+      <span class="eyebrow">Mes valeurs</span>
+      <h2>Ce qui me motive</h2>
+
+      <div class="valeurs-liste">
+        <div class="valeur-item">
+          <h3>Curiosité</h3>
+          <p>J'aime apprendre de nouvelles technologies et comprendre comment les choses fonctionnent en profondeur.</p>
+        </div>
+        <div class="valeur-item">
+          <h3>Autonomie</h3>
+          <p>Je conçois mes projets de A à Z : architecture, base de données, API et interface.</p>
+        </div>
+        <div class="valeur-item">
+          <h3>Travail d'équipe</h3>
+          <p>J'aime collaborer sur des projets et échanger sur les solutions techniques.</p>
+        </div>
+        <div class="valeur-item">
+          <h3>Rigueur</h3>
+          <p>Code propre, architecture claire et souci du détail dans chaque projet.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/about.js"></script>
+</body>
+</html>

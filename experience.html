@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expérience - Boukari</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/experience.css">
+</head>
+<body>
+<canvas id="particle-canvas"></canvas>
+<div id="cursor-ring"></div>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-mark"></span>
+      <span class="logo-text">Boukari</span>
+    </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="experience.html" class="active">Expérience</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <main class="experience">
+
+    <div class="experience__visuel" aria-hidden="true">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Orbite pointillée -->
+        <ellipse class="exp-orbite" cx="200" cy="215" rx="150" ry="58"/>
+
+        <!-- Étoiles -->
+        <circle class="exp-etoile exp-etoile--1" cx="65" cy="90" r="3"/>
+        <circle class="exp-etoile exp-etoile--4" cx="330" cy="290" r="3"/>
+
+<!-- Cœur de diamants -->
+<g class="exp-diamants">
+  <g transform="translate(150,140)">
+    <g class="exp-diamant-move exp-diamant-move--1">
+      <rect class="exp-diamant" x="-26" y="-26" width="52" height="52" rx="12" transform="rotate(45)"/>
+    </g>
+  </g>
+  <g transform="translate(250,140)">
+    <g class="exp-diamant-move exp-diamant-move--4">
+      <rect class="exp-diamant" x="-26" y="-26" width="52" height="52" rx="12" transform="rotate(45)"/>
+    </g>
+  </g>
+  <g transform="translate(95,205)">
+    <g class="exp-diamant-move exp-diamant-move--0">
+      <rect class="exp-diamant" x="-26" y="-26" width="52" height="52" rx="12" transform="rotate(45)"/>
+    </g>
+  </g>
+  <g transform="translate(200,205)">
+    <g class="exp-diamant-move exp-diamant-move--2">
+      <rect class="exp-diamant" x="-26" y="-26" width="52" height="52" rx="12" transform="rotate(45)"/>
+    </g>
+  </g>
+  <g transform="translate(305,205)">
+    <g class="exp-diamant-move exp-diamant-move--5">
+      <rect class="exp-diamant" x="-26" y="-26" width="52" height="52" rx="12" transform="rotate(45)"/>
+    </g>
+  </g>
+  <g transform="translate(150,270)">
+    <g class="exp-diamant-move exp-diamant-move--1">
+      <rect class="exp-diamant" x="-26" y="-26" width="52" height="52" rx="12" transform="rotate(45)"/>
+    </g>
+  </g>
+  <g transform="translate(250,270)">
+    <g class="exp-diamant-move exp-diamant-move--4">
+      <rect class="exp-diamant" x="-26" y="-26" width="52" height="52" rx="12" transform="rotate(45)"/>
+    </g>
+  </g>
+</g>
+      </svg>
+    </div>
+
+    <div class="experience__contenu">
+      <span class="eyebrow">Expérience</span>
+      <h1>Pas encore de stage, mais prêt à décoller</h1>
+      <p>
+        Je n'ai pas encore d'expérience en entreprise. Ce que je sais faire,
+        je le construis projet après projet — chacun pensé de bout en bout,
+        du premier trait d'architecture jusqu'à la mise en ligne. Je suis
+        activement à la recherche d'un stage pour passer à l'étape suivante.
+      </p>
+
+      <div class="experience__boutons">
+        <a href="projets.html" class="btn-cv">Voir mes projets <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=boukaricoding@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-hire">Me contacter <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/experience.js"></script>
+</body>
+</html>
